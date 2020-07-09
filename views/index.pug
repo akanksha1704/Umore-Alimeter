@@ -1,0 +1,448 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(rel='stylesheet' href='/static/style.css')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+  link(href='https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap' rel='stylesheet')
+  title Umore Alimentre
+nav.navbar.navbar-expand-lg.navbar-dark.sticky-top
+  a.navbar-brand(href='#') Navbar
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item.active
+        a.nav-link(href='#about') About Us
+      li.nav-item
+        a.nav-link(href='#menu') Menu
+      li.nav-item
+        a.nav-link(href='#specials') Specials
+      li.nav-item
+        a.nav-link(href='#knowus') Know us
+    li.nav-item.form-inline.my-2.my-lg-0
+      button.btn.btn-outline-light(type='button' data-toggle='modal' data-target='#cartmodal')
+        i.fa.fa-cart-plus.fa-lg
+        |    Cart
+#cartmodal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+  .modal-dialog.modal-dialog-centered(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Cart
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        h2.section-header
+        .cart-row
+          span.cart-item.cart-header.cart-column ITEM
+          span.cart-price.cart-header.cart-column PRICE
+          span.cart-quantity.cart-header.cart-column QUANTITY
+        .cart-items
+        .cart-total
+          strong.cart-total-title Total
+          span.cart-total-price Rs0.00
+        a(href='cart.pug')
+          button.btn.btn-primary.btn-purchase(type='button') PURCHASE
+.intro
+  .cover
+    .border
+      h1 Umore Alimentre
+    br
+  .buttons
+    button.btn.btn-outline-light.btn-lg(type='button') Order Online
+    a(href='reserve.pug')
+      button.btn.btn-outline-light.btn-lg(type='button') Book a Table
+#about.aboutus
+  section.section.section-light
+    h2 About Us
+    p
+      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in. Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!
+  .pimg2
+    .border
+      h2
+        | Image Gallery
+    .container
+      .box.a
+        img(src='/static/img1.jpeg' alt='')
+      .box.b
+        img(src='/static/img2.jpeg' alt='')
+      .box.c
+        img(src='/static/img3.jpeg' alt='')
+      .box.d
+        img(src='/static/img4.jpeg' alt='')
+      .box.e
+        img(src='/static/img5.jpeg' alt='')
+      .box.f
+        img(src='/static/img6.jpeg' alt='')
+      .box.g
+        img(src='/static/img7.jpeg' alt='')
+      .box.h
+        img(src='/static/img8.jpeg' alt='')
+      .box.i
+        img(src='/static/img1.jpeg' alt='')
+      .box.j
+        img(src='/static/img2.jpeg' alt='')
+#specials.specials
+  .specialtitle
+    span.border.spec
+      | Specials
+  .container
+    .box-1
+      img(src='/static/specials1.jpeg' alt='')
+      .overlay1
+        .single-item-text.special-item
+          | Red Sauce Pasta
+        br
+        .single-item-price.special-item
+          | Rs 80
+        br
+        br
+        button.btn.btn-outline-dark.shop-item-button(type='button')
+          i.fa.fa-cart-plus.fa-lg Add to cart
+    .box
+      img(src='/static/specials2.jpeg' alt='')
+      .overlay1
+        .single-item-text.special-item
+          | Seafood pasta
+        br
+        .single-item-price.special-item
+          | Rs 150
+        br
+        br
+        button.btn.btn-outline-dark.shop-item-button(type='button')
+          i.fa.fa-cart-plus.fa-lg Add to cart
+    .box
+      img(src='/static/spexials3.jpeg' alt='')
+      .overlay1
+        .single-item-text.special-item
+          | Cheese-4-ways
+        br
+        .single-item-price.special-item
+          | Rs 180
+        br
+        br
+        button.btn.btn-outline-dark.shop-item-button(type='button')
+          i.fa.fa-cart-plus.fa-lg Add to cart
+    .box
+      img(src='/static/specials4.jpeg' alt='')
+      .overlay1
+        .single-item-text.special-item
+          | Two in One pizza
+        br
+        .single-item-price.special-item
+          | Rs 140
+        br
+        br
+        button.btn.btn-outline-dark.shop-item-button(type='button')
+          i.fa.fa-cart-plus.fa-lg Add to cart
+    .box
+      img(src='/static/specials5.jpeg' alt='')
+      .overlay1
+        .single-item-text.special-item
+          | Chocolate Brownies
+        br
+        .single-item-price.special-item
+          | Rs 80
+        br
+        br
+        button.btn.btn-outline-dark.shop-item-button(type='button')
+          i.fa.fa-cart-plus.fa-lg Add to cart
+    .box
+      img(src='/static/specials6.jpeg' alt='')
+      .overlay1
+        .single-item-text.special-item
+          | Chocolate Cupcakes
+        br
+        .single-item-price.special-item
+          | Rs 60
+        br
+        br
+        button.btn.btn-outline-dark.shop-item-button(type='button')
+          i.fa.fa-cart-plus.fa-lg Add to cart
+#menu.menu
+  .menutitle
+    span.border
+      | Menu
+  .container
+    .box.title
+      .category
+        h1 Pasta
+    .box.title
+      .category
+        h1 Pizza
+    .box.title
+      .category
+        h1 Desserts
+    .box.d
+      .single-item.d-flex.justify-content-between.my-3.py-3
+        .single-item-text
+          h3 Cheese tortellini
+        .overlay1
+          button.btn.btn-outline-dark.shop-item-button(type='button')
+            i.fa.fa-cart-plus.fa-lg  Add to Cart
+        .single-item-price.align-self-end
+          h4(style="font-family: 'Bree Serif', serif;") Rs 100
+    .box.e
+      .single-item.d-flex.justify-content-between.my-3.py-3
+        .single-item-text
+          h3 Pizza pockets
+        .overlay1
+          button.btn.btn-outline-dark.shop-item-button(type='button')
+            i.fa.fa-cart-plus.fa-lg  Add to Cart
+        .single-item-price.align-self-end
+          h4(style="font-family: 'Bree Serif', serif;") Rs 100
+    .box
+      .single-item.d-flex.justify-content-between.my-3.py-3
+        .single-item-text
+          h3 Souffle
+        .overlay1
+          button.btn.btn-outline-dark.shop-item-button(type='button')
+            i.fa.fa-cart-plus.fa-lg  Add to Cart
+        .single-item-price.align-self-end
+          h4(style="font-family: 'Bree Serif', serif;") Rs 180
+    .box
+      .single-item.d-flex.justify-content-between.my-3.py-3
+        .single-item-text
+          h3 Lasagna
+        .overlay1
+          button.btn.btn-outline-dark.shop-item-button(type='button')
+            i.fa.fa-cart-plus.fa-lg  Add to Cart
+        .single-item-price.align-self-end
+          h4(style="font-family: 'Bree Serif', serif;") Rs 250
+    .box
+      .single-item.d-flex.justify-content-between.my-3.py-3
+        .single-item-text
+          h3
+            | Pepperoni Pizza
+        .overlay1
+          button.btn.btn-outline-dark.shop-item-button(type='button')
+            i.fa.fa-cart-plus.fa-lg  Add to Cart
+        h3
+        .single-item-price.align-self-end
+          h4(style="font-family: 'Bree Serif', serif;") Rs 140
+    .box
+      .single-item.d-flex.justify-content-between.my-3.py-3
+        .single-item-text
+          h3 Millefoy
+        .overlay1
+          button.btn.btn-outline-dark.shop-item-button(type='button')
+            i.fa.fa-cart-plus.fa-lg  Add to Cart
+        .single-item-price.align-self-end
+          h4(style="font-family: 'Bree Serif', serif;") Rs 150
+    .box
+      .single-item.d-flex.justify-content-between.my-3.py-3
+        .single-item-text
+          h4 Sphagetti and meat balls
+        .overlay1
+          button.btn.btn-outline-dark.shop-item-button(type='button')
+            i.fa.fa-cart-plus.fa-lg  Add to Cart
+        .single-item-price.align-self-end
+          h4(style="font-family: 'Bree Serif', serif;") Rs 120
+    .box
+      .single-item.d-flex.justify-content-between.my-3.py-3
+        .single-item-text
+          h3 Cheese Burst
+        .overlay1
+          button.btn.btn-outline-dark.shop-item-button(type='button')
+            i.fa.fa-cart-plus.fa-lg  Add to Cart
+        .single-item-price.align-self-end
+          h4(style="font-family: 'Bree Serif', serif;") Rs 150
+    .box
+      .single-item.d-flex.justify-content-between.my-3.py-3
+        .single-item-text
+          h3 Chocolava Cake
+        .overlay1
+          button.btn.btn-outline-dark.shop-item-button(type='button')
+            i.fa.fa-cart-plus.fa-lg  Add to Cart
+        .single-item-price.align-self-end
+          h4(style="font-family: 'Bree Serif', serif;") Rs 120
+    .box
+      .single-item.d-flex.justify-content-between.my-3.py-3
+        .single-item-text
+          h3 Carbonara
+        .overlay1
+          button.btn.btn-outline-dark.shop-item-button(type='button')
+            i.fa.fa-cart-plus.fa-lg  Add to Cart
+        .single-item-price.align-self-end
+          h4(style="font-family: 'Bree Serif', serif;") Rs 120
+    .box
+      .single-item.d-flex.justify-content-between.my-3.py-3
+        .single-item-text
+          h3 Pepper Barbeque
+        .overlay1
+          button.btn.btn-outline-dark.shop-item-button(type='button')
+            i.fa.fa-cart-plus.fa-lg  Add to Cart
+        .single-item-price.align-self-end
+          h4(style="font-family: 'Bree Serif', serif;") Rs 180
+    .box
+      .single-item.d-flex.justify-content-between.my-3.py-3
+        .single-item-text
+          h3 Tiramisu
+        .overlay1
+          button.btn.btn-outline-dark.shop-item-button(type='button')
+            i.fa.fa-cart-plus.fa-lg  Add to Cart
+        .single-item-price.align-self-end
+          h4(style="font-family: 'Bree Serif', serif;") Rs 100
+#knowus.container
+  .team
+    span.border
+      | Our Team
+    .row
+      .col-9.col-lg-4.col-sm-6.mx-auto.my-4
+        .card.first(style='width: 18rem;')
+          img.card-img-top(src='/static/chef2.jpeg' alt='...')
+          h5.card-title Andy Allen
+          .card-body
+            p.card-text
+              | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+          .card-body
+            a.card-link(href='#')
+              i.fa.fa-instagram.fa-lg
+            a.card-link(href='#')
+              i.fa.fa-facebook.fa-lg
+            a.card-link(href='#')
+              i.fa.fa-linkedin.fa-lg
+      .col-9.col-lg-4.col-sm-6.mx-auto.my-4
+        .card.first(style='width: 18rem;')
+          img.card-img-top(src='/static/chef1.jpeg' alt='...')
+          h5.card-title Amardeep Singh
+          .card-body
+            p.card-text
+              | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+          .card-body
+            a.card-link(href='#')
+              i.fa.fa-instagram.fa-lg
+            a.card-link(href='#')
+              i.fa.fa-facebook.fa-lg
+            a.card-link(href='#')
+              i.fa.fa-linkedin.fa-lg
+      .col-9.col-lg-4.col-sm-6.mx-auto.my-4
+        .card.first(style='width: 18rem;')
+          img.card-img-top(src='/static/chef4.jpeg' alt='...')
+          h5.card-title Nate Jose
+          .card-body
+            p.card-text
+              | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+          .card-body
+            a.card-link(href='#')
+              i.fa.fa-instagram.fa-lg
+            a.card-link(href='#')
+              i.fa.fa-facebook.fa-lg
+            a.card-link(href='#')
+              i.fa.fa-linkedin.fa-lg
+.reviews
+  span.border
+    | Reviews
+.review
+  #carouselExampleControls.carousel.slide(data-ride='carousel')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src='/static/carousel1.jpeg' alt='First slide')
+        .carousel-caption.d-md-block
+          .section-light
+            p
+              | The best place where a person can spend some quality times!!Food is very delicious and services are great..
+            h5 -Amir Rodriguez
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star-half(aria-hidden='true')
+      .carousel-item
+        img.d-block.w-100(src='/static/carousel2.jpeg' alt='Second slide')
+        .carousel-caption.d-md-block
+          .section-light
+            p
+              | The best place where a person can spend some quality times!!Food is very delicious and services are great..
+            h5 -Mustafa
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+      .carousel-item
+        img.d-block.w-100(src='/static/carousel3.jpg' alt='Third slide')
+        .carousel-caption.d-md-block
+          .section-light
+            p
+              | The best place where a person can spend some quality times!!Food is very delicious and services are great..
+            h5 -Anton Ego
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star-half(aria-hidden='true')
+    a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+footer
+  .footer
+    .footercontent
+      .footer-section.about
+        h2 Umore Alimentre
+        br
+        p.text
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          | Impedit, ab. Iure repellat quo natus praesentium
+          | sit. Inventore,
+          | voluptatum distinctio animi doloribus aliquam eos sit sapiente,
+          | quibusdam amet quam ducimus rerum?
+        .contact
+          i.fa.fa-phone
+          |  &nbsp;: +852 1234 5678
+          br
+          i.fa.fa-fax
+          | : +852 8765 4321
+          br
+          i.fa.fa-envelope
+          | :
+          a(href='mailto:confusion@food.net') umorealimentre@food.net
+        br
+      .footer-section.links
+        .address
+          h2 Address
+          br
+          |                     121, Clear Water Bay Road
+          br
+          |  Clear Water Bay, Kowloon
+          br
+          |  HONG KONg
+          br
+          br
+          br
+          .social
+            a.btn-instagram(href='http://google.com/+')
+              i.fa.fa-instagram.fa-lg
+            a.btn-facebook(href='http://www.facebook.com/profile.php?id=')
+              i.fa.fa-facebook.fa-lg
+            a.btn-linkedin(href='http://www.linkedin.com/in/')
+              i.fa.fa-linkedin.fa-lg
+            a.btn-twitter(href='http://twitter.com/')
+              i.fa.fa-twitter.fa-lg
+            a.btn-youtube(href='http://youtube.com/')
+              i.fa.fa-youtube.fa-lg
+            a.btn-mail(href='mailto:')
+              i.fa.fa-envelope-o.fa-lg
+      .footer-section.contact
+        h2
+          | Contact Us
+        .example-container
+          form(action='/', method="post")
+            .form-group
+              label(for='exampleFormControlInput1') Email address
+              input#exampleFormControlInput1.form-control(name="email" type='email' placeholder='name@example.com')
+            .form-group
+              textarea#exampleFormControlTextarea1.form-control(rows='1' name="exampletextarea")
+            button.btn.btn-outline-light() send
+    .footerbottom
+      | &copy; Umore Alimentre|Designed by Indranil and Akanksha
+script(src='/static/store.js' async='')
+script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')

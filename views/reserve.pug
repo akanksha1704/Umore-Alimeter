@@ -1,0 +1,41 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(rel='stylesheet' href='style.css')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+  link(href='https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap' rel='stylesheet')
+  title Reserve a table
+.tablebooking
+  .container.section-light.reserve
+    .row
+      .col-9.col-lg-6.col-sm-0.d-none-sm.pic
+        img.imgreserve(src='/static/reserve.jpeg' alt='')
+      .col-9.col-lg-6.col-sm-12
+        form(style='color: black;' action="/reserve" method="post")
+          .form-group.row
+            label.col-md-4.col-form-control(form='Name') Name
+            .col-md-8
+              input#text.form-control(type='text' name='name' placeholder='Enter Your Name')
+          .form-group.row
+            label.col-md-4.col-form-control(form='Phone No') Contact no
+            .col-md-8
+              input#number.form-control(type='number' name='number' placeholder='enter your contact number')
+          .form-group.row
+            label.col-md-4.col-form-control(form='NoOfGuests') Number of Guests
+            .col-md-8
+              input#number.form-control(type='number' name='NoOfGuests' placeholder='Select Number of Guests')
+          .form-group.row
+            label.col-md-4.col-form-control(form='date and time') Date and Time
+            .col-md-4
+              input#date.form-control(type='date' name='date' placeholder='Date')
+            .col-md-4
+              input#time.form-control(type='time' name='time' placeholder='Time')
+          .form-group.row
+            button.btn.btn-outline-dark.offset-md-4() Cancel
+            button.btn.btn-outline-dark() Reserve
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')

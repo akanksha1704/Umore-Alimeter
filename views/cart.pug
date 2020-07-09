@@ -1,0 +1,60 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(rel='stylesheet' href='style.css')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+  title
+.cartnew
+  .container
+    .row
+      .col-12.col-lg-6.col.sm-6.mx-auto.my-4
+        .box
+          form(autocomplete='on' onsubmit='confirmClicked()' action='/cart' method='post')
+            .form-group.row
+              label.col-sm-2.col-form-label(for='name') Name
+              .col-sm-10
+                input#name.form-control.user-name(type='name' name='name' placeholder='' required='')
+            .form-group.row
+              label.col-sm-2.col-form-label(for='phno') Contact
+              .col-sm-10
+                input.form-control(type='text' name='usercontact' id='ph no' placeholder='' required='')
+            .form-group.row
+              label.col-sm-2.col-form-label(for='phno') Address
+              .col-sm-10
+                .form-row
+                  .col-7
+                    input.form-control(type='text' name='useraddress' placeholder='Address' required='')
+                  .col
+                    input.form-control(type='text' placeholder='Landmark' name="landmark")
+                  .col
+                    input.form-control(type='text' name='userpin' placeholder='Pincode' required='')
+            .form-group.row
+              label.col-sm-2.col-form-label(for='phno') Specific Instructions
+              .col-sm-10
+                input.form-control(type='text' id='ph no' placeholder='' name="specific")
+            fieldset.form-group
+              .row
+                legend.col-form-label.col-sm-2.pt-0 Payment Option
+                .col-sm-10
+                  .form-check
+                    input#gridRadios1.form-check-input(type='radio' name='gridRadios' value='option1' checked='' required='')
+                    label.form-check-label(for='gridRadios1')
+                      | Cash on delivery
+                  .form-check
+                    input#gridRadios2.form-check-input(type='radio' name='gridRadios' value='option2')
+                    label.form-check-label(for='gridRadios2')
+                      | UPI
+                  .form-check
+                    input#gridRadios3.form-check-input(type='radio' name='gridRadios' value='option3')
+                    label.form-check-label(for='gridRadios3')
+                      | Debit Card/Credit Card
+            .buynow
+              a(href='index.pug')
+                button.button-confirm(style='align-content: center !important;')
+                  .btn.btn-lg.btn-dark() Confirm Order
+script(src='/static/cart.js' async='')
+script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
